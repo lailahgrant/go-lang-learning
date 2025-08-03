@@ -185,9 +185,65 @@ go mod init booking-app
 
 <hr>
 
+> Going to use be using `Go packages` throughout Go applications
+
 In Go, everything is organised in **packages**
 
 - All our code must belong to a **packages**
 - The first statement in Go file must be `package ...`
+  - Use the keyword `package`
 
 > `main.go` is the standard name for the main file where the Go application code is written.
+>
+
+Go entrypoint
+- Declare the entry point of the Go application
+- Where to start the program? Where is the entrypoint?
+- Go needs to know where to start the program, which line to start execution
+- If you have multiple files in the Go application/project, you need to give the `Go compiler` a starting point: the firs line of code where exceution starts.
+> An entry point is a main function that Go will always look for whenever you execute the Go application.
+>
+> The **main** function is the entrypoint of a Go program.
+> Put logic with in the main(){}
+
+`main.go` file
+
+```Go
+package main
+func main(){
+Print("Hello World)
+}
+```
+> A program ca only have 1 **main** *function*, because you can only have 1 entrypoint.
+
+- Import "fmt" package to use `Print()`
+```Go
+package main
+
+//"fmt" stands for Format package
+// import the fmt package for formatted I/O
+import "fmt"
+
+//declare entry point
+func main() {
+	fmt.Print("Hello World")
+}
+```
+> __Go Packages__
+> - Go programs are organised into packages
+> - Go's standard library, provides different core packages for us to use (built-in packages).
+> - "**fmt**" is one of these which can be used by importing it.
+> 
+> A package is a collection of source files.
+> - A package is containers of various functionalities to use in Go application
+> - Read the documentation for the packages
+
+
+
+
+
+
+
+
+
+
