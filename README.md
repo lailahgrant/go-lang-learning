@@ -171,14 +171,23 @@ On YouTube; Watch a video as you comment, like, subscribe and download the video
 To Start a Go project
 - Create a folder e.g. booking-app
 - Install VSCode extwnsions
-- Create Go projects in modules
+- Create Go projects in modules (Initialize or project or "`module`")
   - Use the command below in the VSCode terminal
 ```go
 go mod init booking-app
 ```
 > `go mod init <module path>`
 > - Creates a new module
+> - Initialized a `go.mod` file
+> - Describes the module: **with name/module path** and **go version** used in the program
+> - The module path is also the **import path** (e.g. github.com/lailahgrant/booking-app)
 > - Module path can correspond to a repository you plan to publish your module to (e.g. github.com/lailahgrant/booking-app)
 
+<hr>
 
+In Go, everything is organised in **packages**
 
+- All our code must belong to a **packages**
+- The first statement in Go file must be `package ...`
+
+> `main.go` is the standard name for the main file where the Go application code is written.
