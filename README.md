@@ -226,7 +226,7 @@ import "fmt"
 
 //declare entry point
 func main() {
-	fmt.Print("Hello World")
+	fmt.Println("Hello World")
 }
 ```
 > __Go Packages__
@@ -237,6 +237,22 @@ func main() {
 > A package is a collection of source files.
 > - A package is containers of various functionalities to use in Go application
 > - Read the documentation for the packages
+
+<hr>
+
+Execute a Go file
+- Write the following command in the terminal
+> `go run <file name>` = compiles and runs the code
+> `go run main.go`
+
+<hr>
+
+<img src="./image-slides/start-booking-app.PNG" alt="Start the Booking App">
+
+To do in the Application
+
+- Welcome our users
+- 
 
 
 
